@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test11_2.html</title>
+  <style>
+    /* 동등선택자 : (,)로 구분 */
+    ol, ul {
+      background-color :blueviolet;
+    }
+    .fruit {
+      background-color: green;
+      color :aliceblue;
+    }
+    #apple{
+      background-color: rgb(37, 10, 192);
+      color :aliceblue;
+    }
+  </style>
+</head>
+<body>
+  <h1></h1>
+  <h2>길동이가 좋아하는 음식 best5</h2>
+  <ol>
+    <li>짜장면</li>
+    <li>찐빵</li>
+    <li>과일</li>
+      <ul class = "fruit">
+        <li>사과</li>
+        <li>배</li>
+        <li>바나나</li>
+      </ul>
+  </ol>
+  <h2>길동이가 좋아하는 음식 5가지</h2>
+  <ul>
+    <li>짜장면</li>
+    <li>찐빵</li>
+    <li>과일</li>
+      <ol class = "fruit">
+        <li>사과
+          <ul id = "apple">
+            <li>홍옥</li>
+            <li>국광</li>
+          </ul>
+        </li>
+        <li>배</li>
+        <li>바나나</li>
+      </ol>
+  </ul>
+</body>
+</html>

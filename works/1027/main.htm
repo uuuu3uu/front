@@ -1,0 +1,18 @@
+<!-- 프레임 만들기.. body필요없음 -->
+
+<html>
+  <head>
+  <!-- frameborder : 프레임사이의 경계선 표시 여부 (1: 표시 0 :해제)
+       scrolling : auto/yes/no
+  -->
+    <frameset rows = "150px,*,100px" border = "0px" frameborder = "1" framespacing = "3px">
+      <frame src = "a.htm" noresixe scrolling = "no" marginheight="10px" marginwidth="20px">
+      <frameset cols ="180px, *, 100"> <!-- 00px, * (* : 나머지 다 가져가) -->
+        <frame src = "b.htm" noresize>
+        <frame src = "c.htm">
+        <frame src = "e.htm">
+      </frameset>
+      <frame src = "d.htm">
+    </frameset>
+  </head>
+</html>

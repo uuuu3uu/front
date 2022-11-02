@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test3.html</title>
+  <style>
+    .item {
+      width: 100px;
+      height: 800px;
+      border: 1px solid gray;
+      margin: 10px;
+      color: #fff;
+    }
+    .container {
+      height: 100vh; /* view port 100%로 설정 */
+      display: flex; /* 플렉스 박스 설정을 알린다 */
+      flex-direction: row; /* 플렉스박스의 배치(기본-행(row)), row, colum(열방향), row-reverse(역방향 행), column-reverse(역방향 열)*/
+      flex-flow: row nowrap; /* 컨테이너의 아이템들을 한줄에 담을 수 없을때 줄바꿈 처리 유무를 결정 */
+    }
+
+    /* 각각의 개별항목에 따른 수직정렬 처리(크기는 1:2:1의 비율을 유지) */
+    .item:nth-child(1) {
+      flex: 1;
+      text-align: center; 
+      padding: 40px 0 0;
+      height: 160px;
+      align-self: flex-start; /*위쪽정렬*/   /*  self개별정렬 */
+    }
+    .item:nth-child(2) {
+      flex: 2;
+      text-align: center; 
+      align-self: flex-end;  /*아래쪽정렬*/
+    }
+    .item:nth-child(3) {
+      flex: 1;
+      text-align: center; 
+      align-self: center;  /*수직 중앙정렬*/
+    }
+  </style>
+</head>
+<body>
+  <div class="container">   <!-- 플렉스 컨테이너라고 부른다-->
+    <div class="item" style="background-color:#FAD593">1.안녕하세요</div>     <!-- 플렉스 아이템이라고 부른다-->
+    <div class="item" style="background-color:#8D88FA">2.안녕하세요</div>
+    <div class="item" style="background-color:#AD976F">3.안녕하세요</div>
+    <!-- <div class="item" style="background-color:#A0AD4C">4.안녕하세요</div>
+    <div class="item" style="background-color:#FA8777">5.안녕하세요</div>  -->
+    <!-- <div class="item" style="background-color:#ABAA91">6.안녕하세요</div>
+    <div class="item" style="background-color:#F7F5C6">7.안녕하세요</div>
+    <div class="item" style="background-color:#F4BAF8">8.안녕하세요</div>
+    <div class="item" style="background-color:#6FAB7C">9.안녕하세요</div> -->
+    <!-- <div class="item" style="background-color:#ADF7BD">10.안녕하세요</div> -->
+  </div>
+</body>
+</html>

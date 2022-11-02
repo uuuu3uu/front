@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>레이어연습</title>
+  <style>
+    body {
+      margin: 0px;
+    }
+    #contanier {
+      width: 1000px;
+      margin: 0 auto;
+    }
+    #layer1, #layer2, #layer3, #layer5, #layer6 {
+      width: 200px;
+      height: 250px;
+    }
+    #layer1:hover, #layer2:hover, #layer3:hover, #layer5:hover, #layer6:hover{
+      background-color: aqua;
+    }
+    header {
+      background-image: url("../images/11.jpg");
+      height: 100px;
+      text-align: center;
+      color: blue;
+      padding: 30px;
+    }
+    #content1 {
+      float: left;
+      width: 200px;
+    }
+    #content2 {
+      float: left;
+      width: 600px;
+    }
+    #content3 {
+      float: right;
+      width: 100px;
+    }
+    footer {
+      clear: both;
+      background-color: navy;
+      height: 100px;
+    }
+    #layer1 {
+      background-color: darkkhaki;
+    }
+    #layer2 {
+      background-color: rgb(104, 99, 37);
+    }
+    #layer3 {
+      background-color: rgb(40, 39, 20);
+    }
+    #layer5 {
+      background-color: rgb(50, 167, 93);
+    }
+    #layer6 {
+      background-color: rgb(22, 86, 31);
+    }
+    #layer4-1, #layer4-2, #layer4-3, #layer4-4 {
+      float: left;
+      width: 230px;
+      height: 250px;
+      margin: 10px;
+      padding: 20px
+    }
+    #layer4-1 {background-color: teal;}
+    #layer4-2 {background-color: rgb(21, 75, 75);}
+    #layer4-3 {background-color: rgb(13, 15, 15);}
+    #layer4-4 {background-color: rgb(32, 44, 44);}
+  </style>
+</head>
+<body>
+  <div id="container">
+      <div id="content1">
+      <div id="layer1">연습1</div>
+      <div id="layer1">연습2</div>
+      <div id="layer1">연습3</div>
+    </div>
+    <div id="content2">
+      <div id="layer4-1">
+        <b>공지사항</b>
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+      </div>
+      <div id="layer4-2">
+        <b>신입회원</b>
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        </div>
+      </div>
+      <div id="layer4-3">
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        </div>
+      </div>
+      <div id="layer4-4">
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        연습4-1-1<br />
+        </div>
+      </div>
+    </div>
+    <div id="content3">
+      
+    </div>
+  </div>
+  
+</body>
+</html>
