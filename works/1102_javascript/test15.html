@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>test15.html</title>
+  <script>
+    'use strict'
+
+    function cal() {
+      let res = eval(myform.num.value);
+      myform.resu.value = res;
+
+    }
+  </script>
+</head>
+<body>
+  <h2>계산하기</h2>
+  <form name="myform" method="get" action="#">
+    <p>입력창<input type="text" name="num" required /></p>
+    <p>결과창<input type="text" name="resu" readonly/></p>
+    <p><input type="button" value="계산" onclick="cal()"></p>
+
+  </form>
+</body>
+</html>
