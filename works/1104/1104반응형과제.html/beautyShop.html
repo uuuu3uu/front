@@ -1,0 +1,151 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>beauty Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<style>
+  .container-fluid {
+    width: 100%;
+    /* height: 500px; */
+    border: 2px solid blue;
+    display: block;
+  }
+
+  .carousel-inner img {
+    width: 100%;
+    /* height: 500px; */
+    border: 2px solid red;
+    display: block;
+
+  }
+
+  .intro {
+    display: block;
+    background-color: rgb(42, 42, 42);
+
+    /* margin-top: 30px; */
+    
+  }
+  .introp {
+    color: #fff;
+    text-align: center;
+    width: 1000px;
+    margin: 0 auto;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border: 1px solid rgb(88, 88, 88);
+  }
+
+  .w3-container {
+    padding: 0.01em 25px;
+  }
+
+  label {
+    color: black;
+  }
+</style>
+
+<body>
+  <!-- -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">Another you</a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" href="#">Introduce</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Notice</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Instagram</a>
+      </li>
+    </ul>
+  </nav>
+  <!---->
+  <div class="container-fluid" style="padding: 0;"><br>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="images/1.jpeg" alt="1" width="1100px" height="500px">
+        </div>
+        <div class="carousel-item">
+          <img src="images/2.jpeg" alt="2" width="1100px" height="500px">
+        </div>
+        <div class="carousel-item">
+          <img src="images/5.jpeg" alt="3" width="1100px" height="500px">
+        </div>
+      </div>
+
+      <!-- Left and right controls -->
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+  </div>
+  <!---->
+  <div class="intro">
+    <div class="introp">
+        <div class="w3-container">
+          <h2>Introduce</h2>
+          <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's
+            standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a
+            type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting,
+            remaining essentially unchanged.</p>
+          <button onclick="document.getElementById('id01').style.display='block'" class="w3-button w3-black" style="margin-top: 30px;">예약하기</button>
+        
+          <div id="id01" class="w3-modal">
+            <div class="w3-modal-content w3-animate-top w3-card-4" style="width: 500px;">
+              <header class="w3-container w3-teal" style="height: 100px;"> 
+                <span onclick="document.getElementById('id01').style.display='none'" 
+                class="w3-button w3-display-topright">&times;</span>
+                <h2 class="w3-wide" style="margin: 32px 0px;">Another you</h2>
+              </header>
+              <div class="w3-container" style="text-align: left; margin-top:30px;">
+                <p><label><i class="fa fa-calendar-check-o"></i> Check In</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckIn" style="margin-top: -10px;" required>          
+                <p style="margin-top: 20px;"><label><i class="fa fa-calendar-o"></i> Check Out</label></p>
+                <input class="w3-input w3-border" type="text" placeholder="DD MM YYYY" name="CheckOut" style="margin-top: -10px;"required>         
+                <p style="margin-top: 20px;"><label><i class="fa fa-male"></i> Adults</label></p>
+                <input class="w3-input w3-border" type="number" value="1" name="Adults" min="1" max="3" style="margin-top: -10px;">              
+                
+                <p style="margin-top: 50px; margin-bottom: 50px;"><button class="w3-button w3-block w3-green w3-center-align" type="submit"><i class="fa fa-search w3-margin-right"></i>예약하기</button></p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </div>
+  </div>
+  <!---->
+  <div>
+    <div class="notice">
+
+    </div>
+
+  </div>
+
+</body>
+
+</html>
