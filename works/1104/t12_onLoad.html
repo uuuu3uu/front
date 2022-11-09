@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>onLoad이벤트처리</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+  <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    'use strict';
+
+    //alert("1.안녕하세요")
+    function onLoadFunc() {
+      alert("2.환영합니다");
+    }
+
+    function onunLoadFunc() {
+      alert("3.안녕히가세요")
+      // location.href = "http://www.naver.com";
+
+    }
+  </script>
+</head>
+<body onload="onLoadFunc()" onunload="onunLoadFunc()"> <!--onunload 지금은 사용되지 않음 강제 팝업창..?-->
+  <h2>onLoad이벤트처리</h2>
+  <input type="button" value="onLoad호출" onclick="onLoadFunc()"/>
+  <input type="button" value="onLoad호출" onclick="onunLoadFunc()"/>
+</body>
+</html>
