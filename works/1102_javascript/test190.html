@@ -7,23 +7,29 @@
   <title>test19.html</title>
   <style>
     body {
+      margin: 50px 50px;
+      padding: 0px;
+    }
+    .calcul {
       width: 300px;
-      margin: 0 auto;
     }
-    .btnwrap {
-      display: grid;
-      grid-template-columns: 1fr 1fr 1fr 1fr;
-    }
-    #calcul {
+    .calinput {
       width: 100%;
       text-align: right;
       border: none;
       background-color: #5B5B5D;
       font-size: 3em;
+      color:#fff;
     }
+
+    .btnwrap {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr; 
+    }
+
     .btn {
       height: 70px;
-      border: none;
+      border: none;  
     }
     .btn:hover {
       background-color: #7d7d7d;
@@ -32,15 +38,24 @@
       grid-column: 1/4;
       border: none;
     }
+    .btnac:hover {
+      background-color: #7d7d7d;
+    }
+
     .btnzero {
       grid-column: 1/3;
       border: none;
     }
+    .btnzero:hover {
+      background-color: #7d7d7d;
+    }
+
+
   </style>
 </head>
 <body>
-    <div>
-      <input type="text" name="calcul" id="calcul" clas="calcul"/>
+    <div class="calcul">
+      <input type="text" name="calinput" class="calinput"/>
       <div class ="btnwrap">
         <!-- <input type="button" onclick="fCheck()" value="``" class="btn" />
         <input type="button" onclick="fCheck()" value="``" class="btn" /> -->

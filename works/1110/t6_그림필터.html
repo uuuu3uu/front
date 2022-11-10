@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<style>
+  img {
+    width: 30%;
+    height: auto;
+    float: left;
+    max-width: 500px;  /* 가장 큰 크기는 500px을 넘기지 않는다.*/
+  }
+  .img1 {filter: blur(5px);}            /* 블러 */
+  .img2 {filter: brightness(200%);}     /* 밝게 */
+  .img3 {filter: contrast(150%);}       /* 선명도 */
+  .img4 {filter: grayscale(100%);}      /* 흑백처리 */
+  .img5 {filter: hue-rotate(100deg);}   /* 색상 */
+  .img6 {filter: invert(100%);}         /* 반전 */
+  .img7 {filter: opacity(50%);}
+  .img8 {filter: saturate(5);}          /* 채도 */
+  .img9 {filter: sepia();}
+  .img10 {filter: drop-shadow(5px 5px 3px gray);}  /* 그림자 */
+</style>
+<body>
+  <h2>그림 필터 적용하기</h2>
+  <img src="../images/11.jpg" class="img1"/>
+  <img src="../images/11.jpg" class="img2"/>
+  <img src="../images/11.jpg" class="img3"/>
+  <img src="../images/11.jpg" class="img4"/>
+  <img src="../images/11.jpg" class="img5"/>
+  <img src="../images/11.jpg" class="img6"/>
+  <img src="../images/11.jpg" class="img7"/>
+  <img src="../images/11.jpg" class="img8"/>
+  <img src="../images/11.jpg" class="img9"/>
+  <img src="../images/11.jpg" class="img10"/>
+</body>
+</html>
